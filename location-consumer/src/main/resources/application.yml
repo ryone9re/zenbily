@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: location-consumer
+
+decaton:
+  kafka:
+    bootstrap-servers: localhost:9092
+    topic: user-location
+    consumer-group: user-location-consumer-group
+  processor:
+    max-pending-records: 1000
+    processing-timeout-millis: 30000
+
+logging:
+  level:
+    dev.ryone: DEBUG
+    com.linecorp.decaton: INFO
+  pattern:
+    console: "%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"

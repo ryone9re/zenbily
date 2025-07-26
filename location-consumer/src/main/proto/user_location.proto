@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package zenbily.location_consumer;
+
+message UserLocation {
+    string user_id = 1;
+    double latitude = 2;
+    double longitude = 3;
+}
