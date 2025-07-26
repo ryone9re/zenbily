@@ -1,6 +1,6 @@
 spring:
   application:
-    name: location-consumer
+    name: user-location-consumer
 
 decaton:
   kafka:

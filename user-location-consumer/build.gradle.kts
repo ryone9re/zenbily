@@ -32,10 +32,6 @@ dependencies {
     implementation("com.linecorp.decaton:decaton-processor:$decatonVersion")
 }
 
-tasks.test {
-    useJUnitPlatform()
-}
-
 protobuf {
     protoc {
         artifact = "com.google.protobuf:protoc:$protobufVersion"
