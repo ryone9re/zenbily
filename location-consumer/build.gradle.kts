@@ -15,7 +15,6 @@ version = "1.0-SNAPSHOT"
 val protobufVersion = "4.31.1"
 val kafkaVersion = "4.0.0"
 val decatonVersion = "9.1.2"
-val testcontainersVersion = "1.21.3"
 
 repositories {
     mavenCentral()
@@ -31,14 +30,6 @@ dependencies {
     implementation("com.linecorp.decaton:decaton-client:$decatonVersion")
     implementation("com.linecorp.decaton:decaton-protobuf:$decatonVersion")
     implementation("com.linecorp.decaton:decaton-processor:$decatonVersion")
-
-    testImplementation("org.springframework.boot:spring-boot-starter-test")
-    testImplementation(platform("org.junit:junit-bom"))
-    testImplementation("org.junit.jupiter:junit-jupiter")
-    testImplementation(platform("org.testcontainers:testcontainers-bom:$testcontainersVersion"))
-    testImplementation("org.testcontainers:kafka")
-    testImplementation("org.testcontainers:junit-jupiter")
-    testImplementation("org.awaitility:awaitility")
 }
 
 tasks.test {
