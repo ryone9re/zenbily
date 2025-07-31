@@ -1,3 +1,6 @@
 spring:
   application:
     name: zenbily
+  config:
+    import:
+      - "classpath:datasource.yaml"
